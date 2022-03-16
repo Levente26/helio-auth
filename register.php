@@ -45,7 +45,7 @@
                 echo 'query error: ' . mysqli_error($conn);
             }
 
-            header('Location: index.php');
+            header('Location: login.php');
         }
     }
 ?>
@@ -70,7 +70,7 @@
             <label for="">Add Your Password Again</label>
             <input type="password" name="passwordagain" value="<?php echo htmlspecialchars($passwordagain) ?>">
             <div class="red-text"><?php echo $errors['password'] ?></div>
-            
+
             <div class="center">
                 <input type="submit" name="submit" value="submit" class="btn brand z-depth-0">
             </div>
